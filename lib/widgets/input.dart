@@ -16,12 +16,11 @@ Padding emailField({required controller, required labelText}) {
       decoration: InputDecoration(
           enabledBorder: const OutlineInputBorder(
               borderRadius: BorderRadius.all(Radius.elliptical(10, 10)),
-              borderSide:
-                  BorderSide(color: Color.fromARGB(255, 223, 240, 223))),
+              borderSide: BorderSide(color: Colors.amber)),
           focusedBorder: const OutlineInputBorder(
               borderRadius: BorderRadius.all(Radius.elliptical(10, 10)),
               borderSide: BorderSide(color: Colors.amber)),
-          fillColor: const Color.fromARGB(255, 255, 234, 172),
+          fillColor: const Color.fromARGB(255, 251, 241, 208),
           filled: true,
           labelText: labelText,
           labelStyle: const TextStyle(color: Colors.amber)),
