@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:jobs/pages/register.dart';
 import 'package:jobs/utils/colors.dart';
 import 'package:jobs/widgets/button.dart';
 import 'package:jobs/widgets/header.dart';
 import 'package:jobs/widgets/input.dart';
+import 'package:jobs/widgets/password.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -20,19 +22,19 @@ class _LoginScreenState extends State<LoginScreen> {
       width: double.maxFinite,
       decoration: const BoxDecoration(
         gradient: LinearGradient(
-            colors: [Colors.white70, Colors.amberAccent],
+            colors: [AppColors.whiteColor, AppColors.accentColor],
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter),
       ),
       child: SafeArea(
           child: SingleChildScrollView(
         child: Column(children: [
-          const SizedBox(height: 70),
+          const SizedBox(height: 60),
           headerWithSlogan(),
           const SizedBox(height: 50),
           emailField(controller: null),
           const SizedBox(height: 20),
-          passwordField(controller: null),
+          const PasswordField(controller: null),
           const SizedBox(height: 5),
           Padding(
               padding: const EdgeInsets.symmetric(horizontal: 30),
@@ -54,12 +56,12 @@ class _LoginScreenState extends State<LoginScreen> {
           Padding(
               padding: const EdgeInsets.symmetric(horizontal: 60),
               child: GestureDetector(
-                // onTap: () {
-                //   Navigator.push(
-                //       context,
-                //       MaterialPageRoute(
-                //           builder: (context) => const RegisterPage()));
-                // },
+                onTap: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const RegisterScreen()));
+                },
                 child: const Row(
                   children: [
                     Text("Don't have an account?"),

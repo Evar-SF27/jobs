@@ -23,13 +23,16 @@ Row headerWithSlogan() {
           Row(
             children: [
               Text("Job Finder",
-                  style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold))
+                  style: TextStyle(
+                      fontSize: 48,
+                      fontWeight: FontWeight.w900,
+                      fontFamily: "Helvetica"))
             ],
           ),
           Row(
             children: [
               Text("Find your jobs with speed and ease...",
-                  style: TextStyle(fontSize: 16))
+                  style: TextStyle(fontSize: 16, fontFamily: "Arial"))
             ],
           )
         ],
