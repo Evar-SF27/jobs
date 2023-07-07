@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:jobs/pages/home.dart';
 import 'package:jobs/pages/register.dart';
 import 'package:jobs/utils/colors.dart';
 import 'package:jobs/widgets/button.dart';
